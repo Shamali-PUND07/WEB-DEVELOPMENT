@@ -1,0 +1,329 @@
+/* Reset and Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #1e1e2f;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+h4{
+  font-size: 32px;
+  color:#fc5185;
+  
+  padding-bottom: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  
+}
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #a6acec;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+
+/* Logo Styling */
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 7px;
+  padding: 4px 10px;
+  transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #d42a4d;
+  color: #fff;
+}
+
+/* Assignment Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.contact-btn {
+  background: #fff4e1;
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: #cc4a6c;
+  color: whitesmoke;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Course Description */
+.course-split {
+  background: ;
+  padding: 100px 20px 50px;
+  text-align: center;
+}
+
+.course-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e1f4f3;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 12px 24px;
+  margin-bottom: 30px;
+  animation: fadeInUp 0.8s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.course-header h3:hover {
+  background-color: #e6f0ff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
+}
+
+.course-detail {
+  max-width: 850px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-size: 17px;
+  color: #000;
+  line-height: 1.7;
+  animation: fadeInUp 1s ease-in-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+  transition: all 0.3s ease;
+  font-family: monospace;
+}
+
+.course-detail:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Assignments Section */
+.assignments-section {
+  padding: 40px 20px;
+  background-color: #000;
+  text-align: center;
+}
+
+.assignments-section h2 {
+  font-family:cursive;
+  font-size: 2.4rem;
+  color: #e1f4f3;
+  margin-bottom: 40px;
+}
+
+.assignment-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.assignment-card {
+
+  border: 1.5px solid #a6acec;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+              box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.assignment-card:hover {
+  transform: translateY(-10px); /* gentle lift */
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
+
+}
+
+
+.assignment-card h3 {
+  color: #ffebd3;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.assignment-card p {
+  font-size: 0.98rem;
+  color: #aedadd;
+  margin-bottom: 18px;
+}
+
+.assignment-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.assignment-links a {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+}
+
+.assignment-links a:hover {
+  background-color: #2f6eb7;
+}
+
+/* About Section */
+.about-section {
+  padding: 40px 20px;
+  background-color: #000;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e1f4f3;
+  margin-bottom: 40px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  text-align: left;
+}
+
+.about-box {
+  background-color: #ffffff;
+  border-left: 6px solid #86003c;
+  border-radius: 10px;
+  padding: 20px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.about-box:hover {
+  background-color: #e6f0fa;
+  transform: translateY(-4px);
+}
+
+.about-box h4 {
+  font-size: 1.1rem;
+  color: #003366;
+  margin-bottom: 4px;
+}
+
+.about-box p {
+  font-size: 0.97rem;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color:#a6acec;
+  color: #fff;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+/* Animations (Optional if AOS is used) */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .navbar .nav-links {
+    margin-top: 10px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

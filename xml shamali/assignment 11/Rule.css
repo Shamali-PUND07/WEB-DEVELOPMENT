@@ -1,0 +1,42 @@
+books { 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 17px;
+	color: #240041; 
+    background: #f7ebc9;
+	width: 100%; 
+} 
+book{
+    padding-top: 50px;
+}
+
+heading { 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+padding-top: 27px;
+padding-bottom: 22px;
+padding-left: 20px;
+	color: rgb(224, 224, 224); 
+	font-size : 40px; 
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    border-radius: 22px;
+    border:  2px solid #6fc2d0;
+} 
+heading, title, author, publisher, edition,price { 
+	display : block; 
+    text-align: center;
+    
+    border: radius 12px; 
+} 
+
+
+title, author, publisher, edition,price { 
+	color: #0a516d; 
+} 
+
+title { 
+    padding-top: 50px;
+    text-align: center;
+	font-size : 25px; 
+	font-weight : bold; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 

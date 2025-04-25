@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Frozen Magic Storybook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Snowburst+One&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --background: #0b1d26;
+      --card-bg: #152e3e;
+      --ice-blue: #ace3ff;
+      --minty-glow: #6ef3d6;
+      --lavender-glow: #ddb4ff;
+      --glass: rgba(255, 255, 255, 0.1);
+      --text-color: #e0f7fa;
+      --shadow: 0 0 10px rgba(174, 255, 255, 0.2);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom left, var(--background), var(--card-bg));
+      color: var(--text-color);
+      overflow-x: hidden;
+      font-size: 0.8rem;
+    }
+
+    #FR {
+      background: var(--background);
+      color: var(--ice-blue);
+      text-align: center;
+      padding: 1.5rem 0.5rem;
+      font-family: 'Snowburst One', cursive;
+      font-size: 1.8rem;
+      box-shadow: 0 4px 15px var(--minty-glow);
+      border-bottom: 2px solid var(--ice-blue);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .section {
+      position: relative;
+      padding: 40px 20px;
+      background: var(--glass);
+      backdrop-filter: blur(8px);
+      margin: 25px auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--lavender-glow);
+      transition: transform 0.3s ease;
+      max-width: 700px;
+    }
+
+    .section:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px var(--minty-glow);
+    }
+
+    .section h2 {
+      font-family: 'Snowburst One', cursive;
+      font-size: 1.6rem;
+      text-align: center;
+      color: var(--ice-blue);
+      margin-bottom: 10px;
+      text-shadow: 0 0 8px var(--minty-glow);
+    }
+
+    .section p {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      margin: 0 auto 15px;
+      line-height: 1.4;
+      max-width: 650px;
+    }
+
+    .image-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border: 3px solid var(--ice-blue);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .image-wrapper img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px var(--ice-blue);
+    }
+
+    .snowflake-divider {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 20px 0;
+      color: var(--ice-blue);
+      animation: shimmer 2s infinite ease-in-out;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.1); }
+    }
+
+    footer {
+      text-align: center;
+      background: var(--background);
+      color: var(--lavender-glow);
+      padding: 10px;
+      margin-top: 25px;
+      font-size: 0.8rem;
+      border-top: 1px solid var(--ice-blue);
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    footer a {
+      color: var(--lavender-glow);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: var(--minty-glow);
+    }
+
+    @media (max-width: 768px) {
+      .section h2 {
+        font-size: 1.4rem;
+      }
+
+      .section p {
+        font-size: 0.85rem;
+      }
+
+      .image-wrapper img {
+        max-width: 85%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #FR {
+        font-size: 1.6rem;
+      }
+
+      .section h2 {
+        font-size: 1.3rem;
+      }
+
+      .section p {
+        font-size: 0.8rem;
+      }
+
+      .image-wrapper img {
+        max-width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<h1 style="color:whitesmoke; padding-top: 20px; padding-left:20px; padding-bottom: 40px; font-size:25px; text-align:center; font-family:Poppins;">❄️❄️❄️ Assignment No.5 ❄️❄️❄️</h1>
+  <h1 id="FR">
+    ❄️ Different Image Tags Example {FROZEN} ❄️
+  </h1>
+
+  <div class="section">
+    <h2>Chapter 1: Basic Image</h2>
+    <p>This is a simple image tag – Elsa in her magical realm.</p>
+    <div class="image-wrapper">
+      <img src="https://i.pinimg.com/474x/60/59/c4/6059c4d9bd3028c6f8cfc692d31225e4.jpg" alt="Elsa Image" height="300">
+    </div>
+  </div>
+
+  <div class="snowflake-divider">❄️❄️❄️</div>
+
+  <div class="section">
+    <h2>Chapter 2: Image Dimensions</h2>
+    <p>Using width and height attributes – Anna’s portrait comes to life.</p>
+    <div class="image-wrapper">
+      <img src="https://i.pinimg.com/474x/6b/af/cc/6bafccf50d1c21b70cb07a2841ce5a4c.jpg" width="300" height="100" alt="Anna Image">
+    </div>
+  </div>
+
+  <div class="snowflake-divider">❄️❄️❄️</div>
+
+  <div class="section">
+    <h2>Chapter 3: CSS Magic</h2>
+    <p>This image glows and floats using CSS only – pure Frozen vibes.</p>
+    <div class="image-wrapper">
+      <img src="https://i.pinimg.com/474x/2a/d1/a7/2ad1a71865df5e98c9fcd74825488d77.jpg" alt="Frozen Group">
+    </div>
+  </div>
+
+  <div class="snowflake-divider">❄️❄️❄️</div>
+
+  <div class="section">
+    <h2>Chapter 4: Click for Adventure</h2>
+    <p>This image links to the Frozen Wikipedia page – click to explore!</p>
+    <div class="image-wrapper">
+      <a href="https://en.wikipedia.org/wiki/Frozen_(2013_film)" target="_blank">
+        <img src="https://i.pinimg.com/474x/6d/92/1d/6d921daf358a833eaf31f519f5d7e11b.jpg" alt="Frozen Wiki">
+      </a>
+    </div>
+  </div>
+
+  <div class="snowflake-divider">❄️❄️❄️</div>
+
+  <div class="section">
+    <h2>Chapter 5: Responsive Image</h2>
+    <p>Adapts to device with <code>srcset</code> – letting the snow adjust!</p>
+    <div class="image-wrapper">
+      <img 
+        src="https://i.pinimg.com/474x/2a/c3/eb/2ac3eb4bc4311efe4c839b357b9ef81a.jpg"
+        alt="Frozen Cast"
+        srcset="https://i.pinimg.com/474x/2a/c3/eb/2ac3eb4bc4311efe4c839b357b9ef81a.jpg 2x"
+        sizes="(max-width: 600px) 120px, 250px">
+    </div>
+  </div>
+
+  <div class="snowflake-divider">❄️❄️❄️</div>
+
+  <div class="section">
+    <h2>Chapter 6: Lazy Loading</h2>
+    <p>This image waits until it's needed – saving energy like Olaf in summer.</p>
+    <div class="image-wrapper">
+      <img src="https://i.pinimg.com/236x/ce/06/a9/ce06a9ad43d719d73b5655d93d8d3ce0.jpg" alt="Frozen Castle" loading="lazy">
+    </div>
+  </div>
+
+  <div class="snowflake-divider">❄️❄️❄️</div>
+
+  <div class="section">
+    <h2>Chapter 7: Long Description</h2>
+    <p>This image has a longdesc attribute for accessibility and detailed explanation.</p>
+    <div class="image-wrapper">
+      <img src="https://i.pinimg.com/736x/5b/6d/8e/5b6d8eccb65c9c140c950eb1c400d5a7.jpg" alt="Frozen Landscape" longdesc="https://example.com/frozen-description.html" width="250px">
+    </div>
+  </div>
+
+  <footer>
+    ⛄ Created by Shamali Pund | CSE 2nd Year | Assignment 5<br>
+    🧊 A magical journey through the Frozen Image Tag Wonderland
+  </footer>
+
+</body>
+</html>

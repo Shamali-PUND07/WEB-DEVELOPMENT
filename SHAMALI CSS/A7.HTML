@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anchor Tag Demo</title>
+  <style>
+    /* Reset & Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #faf5e4; /* Soft gradient for the background */
+      color: #2b3a4b;
+      padding: 50px 20px;
+      line-height: 1.6;
+      font-size: 18px;
+      overflow-x: hidden;
+      font-family: 'Poppins', sans-serif;
+      display: block; /* Ensure the layout is normal block */
+      height: 100%; /* Ensure the body fills the page */
+    }
+
+    /* Header Styles */
+    #AN {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #272343;
+      margin-bottom: 30px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      color: #000
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Card Container (Flex Layout) */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+        padding-left:120PX ;
+      justify-content: center;
+      max-width: 1200px;
+      width: 100%;
+      margin-top: 30px; /* Space between heading and cards */
+    }
+
+    /* Card Styles */
+    .card {
+      background-color: #ffffff;
+      padding: 20px;
+
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(8px); /* Soft background blur */
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      width: 90%; /* Reduced card width */
+      max-width: 350px; /* Max width for better balance */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      color: #2a3d50;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #6c7b8b;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 18px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #900048;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .card a:hover {
+      background-color: #507b8e;
+      transform: scale(1.05);
+    }
+
+    /* Image Styles */
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer Styles */
+    footer {
+      text-align: center;
+      background-color: #2a3d50;
+      color: #fff;
+      padding: 20px;
+      font-size: 0.9rem;
+ 
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>ASSIGNMENT NO.7</h1>
+
+  <h1 id="AN">Anchor Tags</h1>
+<hr>
+  <div class="container">
+    <!-- Card 1: External Link -->
+    <div class="card">
+      <h3>External Link</h3>
+      <p>Explore Wikipedia for more information.</p>
+      <a href="https://www.wikipedia.org" target="_blank">Go to Wikipedia</a>
+    </div>
+
+    <!-- Card 2: Internal Link -->
+    <div class="card">
+      <h3>Internal Link</h3>
+      <p>Navigate directly to another section.</p>
+      <a href="#section2">Go to Section 2</a>
+    </div>
+
+    <!-- Card 3: Mailto Link -->
+    <div class="card">
+      <h3>Send an Email</h3>
+      <p>Contact us for further inquiries.</p>
+      <a href="mailto:shamalipund567@gmail.com">Send Email</a>
+    </div>
+
+    <!-- Card 4: Phone Link -->
+    <div class="card">
+      <h3>Phone Link</h3>
+      <p>Click to call us instantly.</p>
+      <a href="tel:+1234567890">Call Us</a>
+    </div>
+
+    <!-- Card 5: Download Link -->
+    <div class="card">
+      <h3>Download PDF</h3>
+      <p>Download the syllabus in PDF format.</p>
+      <a href="SY-CSE-NEP-Syllabus (6).pdf" download>Download PDF</a>
+    </div>
+
+    <!-- Card 6: Image Link -->
+    <div class="card" id="section2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlAZHRt_vCdXhUrbP456baEeJ2k9Xu9KI61Q&s" alt="Google Logo" />
+      <h3>Link with Image</h3>
+      <p>Click to visit Google.</p>
+      <a href="https://www.google.co.in/">Visit Google</a>
+    </div>
+  </div>
+</br>
+  <footer>
+    Created by Shamali Pund | CSE 2nd Year | Assignment No. 7
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark & Attractive Image Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1f2e, #232334);
+      color: #fff;
+      overflow-x: hidden;
+      padding: 40px 20px 80px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      background: linear-gradient(to right, #ff5f6d, #ffc3a0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff6ac7;
+      font-size: 2.2rem;
+      margin: 40px 0 10px;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background: linear-gradient(to right, #f99bcd, #d3a1ff);
+      width: 60%;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+
+    .horizontal-images,
+    .vertical-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .vertical-images {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .img-card {
+      position: relative;
+      width: 260px;
+      height: 260px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .img-card:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25);
+    }
+
+    .img-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1.1px solid #ffc93c;
+    }
+
+    table {
+      margin: 20px auto;
+      border-spacing: 25px;
+      text-align: center;
+    }
+
+    table td {
+      padding: 0;
+    }
+
+    .footer {
+     
+      bottom: 0;
+      width: 100%;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      box-shadow: 0 -2px 20px #ff00cc;
+      z-index: 100;
+    }
+
+    @keyframes fadeInDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+      }
+
+      .img-card {
+        width: 90%;
+        height: auto;
+      }
+
+      table {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📸 ASSIGNMENT NO.5</h1>
+  <hr>
+  <h1>✨ Images in Different Layouts ✨</h1>
+  <hr>
+
+  <h2>Horizontal Images</h2>
+  <div class="horizontal-images">
+    <div class="img-card"><img src="T1.jpg" alt="Image 1"></div>
+    <div class="img-card"><img src="https://i.pinimg.com/736x/2c/e6/02/2ce6021a84170a43d1386c7eba5f0afe.jpg" alt="Image 2"></div>
+    <div class="img-card"><img src="T3.jpg" alt="Image 3"></div>
+  </div>
+
+  <hr>
+
+  <h2>Vertical Images</h2>
+  <div class="vertical-images">
+    <div class="img-card"><img src="https://i.pinimg.com/474x/5c/a1/31/5ca1318932fe7d9cffb73535cae824b8.jpg" alt="Image 4"></div>
+    <div class="img-card"><img src="https://i.pinimg.com/736x/b5/f8/9c/b5f89c0df76eac15391dfe3907244a81.jpg" alt="Image 5"></div>
+    <div class="img-card"><img src="https://i.pinimg.com/474x/83/38/b6/8338b6f5202ba7f898308cd5b732ae59.jpg" alt="Image 6"></div>
+  </div>
+
+  <hr>
+
+  <h2>Images in Table</h2>
+  <table>
+    <tr>
+      <td><div class="img-card"><img src="T7.jpg" alt="Image 7"></div></td>
+      <td><div class="img-card"><img src="https://i.pinimg.com/736x/01/a9/e2/01a9e2e302f4938052427538375b69a6.jpg" alt="Image 8"></div></td>
+      <td><div class="img-card"><img src="https://i.pinimg.com/736x/f1/be/6e/f1be6eea6631329dd5ea278219e6cf1b.jpg" alt="Image 9"></div></td>
+    </tr>
+    <tr>
+      <td><div class="img-card"><img src="https://i.pinimg.com/236x/2b/d7/0d/2bd70d13e3150755da4fb517d923e407.jpg" alt="Image 10"></div></td>
+      <td><div class="img-card"><img src="https://i.pinimg.com/474x/58/50/e5/5850e5c020aeaadbe4092b2887a24f79.jpg" alt="Image 11"></div></td>
+      <td><div class="img-card"><img src="https://i.pinimg.com/736x/a0/c8/29/a0c8290ad9d30d7f40be2ce641c980cf.jpg" alt="Image 12"></div></td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    Created by Shamali Pund | CSE 2nd Year ✨ Assignment No. 5
+  </div>
+
+</body>
+</html>
